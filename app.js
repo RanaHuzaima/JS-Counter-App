@@ -4,7 +4,12 @@ function increment(){
     document.getElementById('counter').innerHTML = counter
 }
 function decrement(){
-    counter--;
+    if (counter>0) {
+        counter--;
+
+    } else {
+        counter=0;
+    }
     document.getElementById('counter').innerHTML = counter
 }
 function reset(){
